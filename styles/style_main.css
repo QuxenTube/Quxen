@@ -1,0 +1,38 @@
+.main {
+    height: inherit;
+    width: inherit;
+}
+
+.top {
+    background-color: purple;
+    display: block;
+    /* -webkit-flex-direction: column; */
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+    width: max-content;
+}
+.top:hover {
+    background-color: greenyellow;
+}
+
+.boxes {
+    min-width: 100px;
+    width: fit-content;
+    padding: 5px;
+    border: 2px solid;
+    border-color: darkmagenta;
+    margin: 8px;
+}
+
+.middle {
+    background-color: bisque;
+    border-color: black;
+    font-size: small;
+    max-width: 40%;
+}
+
+.middle:hover {
+    background-color: red;
+    font-size: large;
+}
