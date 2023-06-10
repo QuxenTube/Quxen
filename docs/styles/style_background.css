@@ -1,0 +1,85 @@
+.background-image {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    display: block;
+    /* background: linear-gradient(-40deg, #07191E, #082430, #093046, #0C3D4C, #0C556B, #0C556B, #0C3D4C, #093046, #082430, #07191E); 
+    filter: blur(150px);*/
+
+    background: linear-gradient(115deg, rgba(16.30, 42.40, 134.94, 1), rgba(40.91, 0, 81.81, 1), rgba(16.30, 42.40, 134.94, 1));
+    background-size: 400% 400%;
+    animation: back1 15s ease infinite;
+    min-height: 100vh;
+
+}
+
+@keyframes back1 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.type-1 {
+    width: 2px;
+    height: 2px;
+    position: relative;
+    background: white;
+    border-radius: 50%;
+    animation: move;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.type-2 {
+    width: 5px;
+    height: 5px;
+    position: relative;
+    background: white;
+    border-radius: 50%;
+    animation: move;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.type-3 {
+    width: 8px;
+    height: 8px;
+    position: relative;
+    background: white;
+    border-radius: 50%;
+    animation: move;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(101vh);
+    }
+}
+
+#div-test1 {
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+    /* border: black 4px solid;  */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
