@@ -1,0 +1,160 @@
+/*  body {
+    background-color: black;
+    color: var(--color-light);
+    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+  }
+  body::before {
+    content: "Hover or tap the icons.";
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 100px);
+    transform: translate(-50%, -50%);
+  }
+  body::after {
+    content: "Icons are borrowed from Heroicons.";
+    position: absolute;
+    bottom: 36px;
+    right: 36px;
+  }
+
+  */
+
+
+
+.top {
+    z-index: 2;
+    background-color: rgb(48, 0, 48);
+    border-radius: var(--border-rad);
+    
+    height: min-content;
+    width: 100%;
+
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-size: 26px;
+}
+
+.boxes {
+    background-color: var(--color-box-bg);
+    border: 2px solid;
+    border-color: darkmagenta;
+    border-radius: var(--border-rad);
+    padding: 5px;
+    margin: var(--margin-alw);
+
+    width: 20%;
+    max-width: fit-content;
+    min-height: 0px;
+    max-height: min-content;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.boxes:hover {
+    background-color: DarkOrchid;
+    border: 2px solid;
+    border-color: rgb(154, 55, 247);
+}
+
+
+
+
+
+.wrapper-top-tooltip {
+    width: 20%;
+
+    position: relative;
+    display: flex;
+    justify-content: start;
+}
+
+.header-top {
+    background-color: var(--color-box-bg);
+    border: 2px solid darkmagenta;
+    border-radius: 10px;
+    padding: 5px;
+    margin: var(--margin-alw);
+    
+    min-width: fit-content;
+    width: auto;
+    min-height: 0px;
+    max-height: min-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.iconDiv {
+    height: var(--tooltop-icons);
+    width: var(--tooltop-icons);
+    margin: 2px;
+    padding: 1px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    transition: width 300ms ease-in-out 0s, background-color 300ms linear 200ms;
+}
+
+.iconSVG {
+    height: 36px;
+    aspect-ratio: 1 / 1;
+}
+
+.iconDiv:hover,
+.iconDiv:focus-visible {
+    width: 11.5rem;
+    background-color: var(--color-light);
+    transition: width 300ms ease-in-out 0s, background-color 100ms linear 0s;
+}
+
+.iconDiv:focus-visible {
+    outline: 1px solid var(--color-light);
+    outline-offset: 4px;
+}
+
+.iconDiv:active {
+    opacity: 0.9;
+}
+
+.iconDiv::after {
+    content: attr(tooltip);
+    margin-left: 12px;
+    animation: fadeIn 600ms linear forwards;
+}
+
+a.iconDiv-link:link,
+a.iconDiv-link:visited {
+    color: black;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

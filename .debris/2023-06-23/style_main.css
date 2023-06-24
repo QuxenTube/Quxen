@@ -66,7 +66,6 @@ body.body_main {
     font-family: 'Montserrat', sans-serif;
     font-size: medium;
     padding: 10px;
-    padding-left: 2rem;
     border-radius: var(--border-rad);
     width: 100%;
     align-self: center;
@@ -126,6 +125,5 @@ body.body_main {
 }
 
 .logo-img {
-    height: calc(2.7em - 5px);
-    padding: 5px;
+    height: 3em;
 }

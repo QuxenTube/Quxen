@@ -7,10 +7,12 @@
     z-index: 1;
     display: block;
     /* background: linear-gradient(-40deg, #07191E, #082430, #093046, #0C3D4C, #0C556B, #0C556B, #0C3D4C, #093046, #082430, #07191E); 
-    filter: blur(150px);*/
-
-    background: linear-gradient(115deg, rgba(16.30, 42.40, 134.94, 1), rgba(40.91, 0, 81.81, 1), rgba(16.30, 42.40, 134.94, 1));
-    background-size: 400% 400%;
+    filter: blur(150px); */
+    /*background: radial-gradient(53.63% 107.16% at 49.26% 48.82%, rgba(2, 164, 255, 0.26) 0%, rgba(18, 147, 220, 0.4) 0.01%, rgba(65, 28, 170, 0.268) 100%),
+                  linear-gradient(100deg, #1F0935 0%, #021247 100%); */
+    /* background: linear-gradient(115deg, rgba(16.30, 42.40, 134.94, 1), rgba(40.91, 0, 81.81, 1), rgba(16.30, 42.40, 134.94, 1)); */
+    background: linear-gradient(115deg, rgb(10, 30, 100), rgba(40.91, 0, 81.81, 1), rgb(10, 30, 100));
+    background-size: 200% 200%;
     animation: back1 15s ease infinite;
     min-height: 100vh;
 
@@ -22,7 +24,7 @@
     }
 
     50% {
-        background-position: 100% 50%;
+        background-position: 100% 100%;
     }
 
     100% {
@@ -55,6 +57,17 @@
 .type-3 {
     width: 8px;
     height: 8px;
+    position: relative;
+    background: white;
+    border-radius: 50%;
+    animation: move;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.type-4 {
+    width: 12px;
+    height: 12px;
     position: relative;
     background: white;
     border-radius: 50%;
